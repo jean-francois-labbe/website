@@ -1,0 +1,20 @@
+---
+show_navbar: true
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    {% render "head", metadata: site.metadata, title: page.title %}
+  </head>
+  <body class="{{ page.layout }} {{ page.page_class }}">
+    {% if layout.show_navbar %}
+      {% render "navbar", metadata: site.metadata, page: page %}
+    {% endif %}
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% render "footer", metadata: site.metadata %}
+  </body>
+</html>
