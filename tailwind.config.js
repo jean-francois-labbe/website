@@ -3,14 +3,16 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    mode: "production",
-    content: ["./output/**/*.html"],
+    enabled: process.env.BRIDGETOWN_ENV === 'production' ? true : false,
+    content: [
+      "./output/**/*.html",
+      "src/**/*.html",
+      "src/**/*.liquid",
+    ],
   },
+  darkMode: false,
   theme: {
     extend: {
-      skew: {
-        '1': '-1deg',
-      },
       colors: {
         gray: colors.trueGray,
         yellow: {
