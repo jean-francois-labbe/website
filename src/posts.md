@@ -4,12 +4,15 @@ title: Posts
 permalink: /posts/
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="mx-auto prose prose-sm sm:prose lg:prose-lg xl:prose-xl mb-24">
+<h1>Articles</h1>
 
-If you have a lot of posts, you may want to consider adding [pagination](https://www.bridgetownrb.com/docs/content/pagination)!
+{% for post in site.posts %}
+<div class="mb-4">
+<a href="{{ post.url }}" class="hover:text-red-500">{{ post.title }}</a>
+<div>{{ post.summary }}</div>
+</div>
+
+{% endfor %}
+
+</div>
