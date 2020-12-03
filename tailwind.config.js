@@ -35,7 +35,19 @@ module.exports = {
       },
       screens: {
         'print': {'raw': 'print'},
-      }
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            'pre code::before': {
+              content: 'none',
+            },
+            'pre code::after': {
+              content: 'none',
+            },
+          },
+        },
+      }),
     },
   },
   variants: {},

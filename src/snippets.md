@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: prose
 ---
 
 # Useful snippets of code
