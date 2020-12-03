@@ -2,17 +2,15 @@
 layout: page
 ---
 
-<div class="mx-auto mb-24 prose prose-sm sm:prose lg:prose-lg">
-  <h1>{{ page.title }}
-    <br/>
-    <span class="text-base font-medium text-gray-500">{{ page.date | date_to_long_string }}</span>
-  </h1>
+<h1>{{ page.title }}
+  <br/>
+  <span class="text-base font-medium text-gray-500">{{ page.date | date_to_long_string }}</span>
+</h1>
 
-  {% if page.image %}
-    <div class='main-image-placeholder'>
-      <img src="{{ page.image }}" alt="{{ page.main_image_description }}">
-    </div>
-  {% endif %}
+{% if page.image %}
+  <div class='main-image-placeholder'>
+    <img src="{{ page.image }}" alt="{{ page.main_image_description }}">
+  </div>
+{% endif %}
 
-  {{ content }}
-</div>
+{{ content }}
