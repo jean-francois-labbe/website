@@ -96,8 +96,8 @@ This is the same as [http://localhost:3000/posts](http://localhost:3000/posts) b
 
 There you go you can list posts, create a new post, delete existing posts.
 
-<img src="/images/turbolinks/posts.png">
-<img src="/images/turbolinks/edit-post.png">
+<img src="/images/turbolinks/posts.png" loading="lazy">
+<img src="/images/turbolinks/edit-post.png" loading="lazy">
 
 We'll see later how to add some beauty in it.
 
@@ -241,8 +241,8 @@ Your android application will open up and display the rails web application and 
 
 Yeah, you did it.
 
-<img src="/images/turbolinks/android-edit-post.jpg">
-<img src="/images/turbolinks/android-posts-index.jpg">
+<img src="/images/turbolinks/android-edit-post.jpg" loading="lazy">
+<img src="/images/turbolinks/android-posts-index.jpg" loading="lazy">
 
 ## Handle outside URL
 
@@ -484,13 +484,13 @@ Make it look like so:
 
 It will look like so on your browser:
 
-<img src="/images/turbolinks/computer-edit-post-new.png">
-<img src="/images/turbolinks/computer-posts-index.png">
+<img src="/images/turbolinks/computer-edit-post-new.png" loading="lazy">
+<img src="/images/turbolinks/computer-posts-index.png" loading="lazy">
 
 And in android:
 
-<img src="/images/turbolinks/android-posts-edit-beauty.jpg">
-<img src="/images/turbolinks/android-posts-index-beauty.jpg">
+<img src="/images/turbolinks/android-posts-edit-beauty.jpg" loading="lazy">
+<img src="/images/turbolinks/android-posts-index-beauty.jpg" loading="lazy">
 
 
 # The end.
