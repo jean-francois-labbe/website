@@ -1,0 +1,23 @@
+- text: "/root"
+  link: "/"
+  title: "Go to homepage"
+
+- text: Blog
+  link: "/blog"
+  title: "Go to the blog"
+
+- text: Snippets
+  link: "/snippets"
+  title: "Go to snippets"
+
+- text: Best books
+  link: "/best_books"
+  title: "Go check the books I liked"
+
+- text: Technology Intelligence
+  link: "/technology_intelligence"
+  title: "Go to technology intelligence"
+
+- text: CV
+  link: "/cv"
+  title: "Go check my cv"

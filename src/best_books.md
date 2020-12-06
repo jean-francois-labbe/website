@@ -1,5 +1,5 @@
 ---
-title: Books
+title: Best books
 layout: prose
 ---
 
