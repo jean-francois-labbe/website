@@ -5,7 +5,7 @@
 
   <meta name="description" content="{{ metadata.description }}" />
 
-  {% if bridgetown.environment == "production" %}
+  {% if environment == "production" %}
     {% if metadata.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ metadata.google_analytics }}"></script>
       <script>
@@ -14,6 +14,14 @@
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', '{{ metadata.google_analytics }}');
+
+                document.addEventListener('turbolinks:load', event => {
+                          if (typeof gtag === 'function') {
+                                    gtag('config', '{{ metadata.google_analytics }}', {
+                                              'page_location': event.data.url
+                                            });
+                                  }
+                        });
       </script>
     {% endif %}
   {% endif %}
