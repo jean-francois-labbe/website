@@ -4,7 +4,11 @@ permalink: /cv.html
 layout: cv
 ---
 <div class="w-full">
-  <button class="float-right px-3 py-1 text-blue-800 bg-blue-100 rounded-left print:hidden" onclick="toggle_long_cv_elements(this)">Voir la version courte</button>
+  <div class="flex flex-col float-right print:hidden">
+  <button class="px-3 py-1 mb-2 text-blue-800 bg-blue-100 rounded-left" onclick="toggle_long_cv_elements(this)">Voir la version courte</button>
+  <button class="px-3 py-1 text-blue-800 bg-blue-100 rounded-left" onclick="window.print()">
+    <svg class="inline-block w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>Print This Page</button>
+  </div>
   <div class="container max-w-4xl mx-auto antialiased text-gray-900 print:m-0 print:bg-white cv">
     <div class="px-6 py-3 my-4 bg-white rounded print:p-0 print:m-0">
       <header>
