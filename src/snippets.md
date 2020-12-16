@@ -4,6 +4,36 @@ layout: prose
 
 # Useful snippets of code
 
+## Rails
+
+**Apply model validation on some context**
+
+```ruby
+# Model
+class Ticket < ActiveRecord::Base
+  belongs_to :user
+
+  validate :user_cant_be_blacklisted, on: :confirmation
+
+  def confirm
+    update confirmed: true if confirmable?
+  end
+
+  def confirmable?
+    valid? :confirmation
+  end
+
+  private
+    def user_cant_be_blacklisted
+      errors.add :user, "user is blacklisted" if user.blacklisted?
+    end
+end
+
+ticket.confirmable?
+ticket.save(context: :confirmation)
+ticket.confirm
+```
+
 ## Ruby
 
 ### Configuration settings
@@ -67,6 +97,8 @@ uri.query = Rack::Utils.build_query(query) unless query.empty?
 
 response = Net::HTTP.get_response(uri).body
 ```
+
+
 
 ## Debugging
 ```bash
