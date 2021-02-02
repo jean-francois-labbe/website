@@ -6,6 +6,25 @@ layout: prose
 
 ## Rails
 
+**Scoping or requests**
+
+Instead of this
+
+```ruby
+Post
+  .joins(:category).where(categories: {name: "ruby"})
+  .or(Post.joins(:category).where(categories: {name: "rails"})
+```
+
+Do this
+
+```ruby
+Post.joins(:category).scoping do
+  Post.where(categories: {name: "ruby"})
+    .or(Post.where(categories: {name: "rails"})
+end
+```
+
 **Apply model validation on some context**
 
 ```ruby
