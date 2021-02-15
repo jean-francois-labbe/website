@@ -40,7 +40,7 @@ There are few things to keep in mind:
 * The information must come to you, use an RSS reader to be notified of articles
 
 ### My sources
-I use a mix of different mediums, there is one medium that requires specific treatment: [Books](/books).
+I use a mix of different mediums, there is one medium that requires specific treatment: [Books](/best_books).
 
 Here are my main sources
 
