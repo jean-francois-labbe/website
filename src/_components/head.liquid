@@ -7,25 +7,6 @@
 
   {% if environment == "production" %}
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0859ae00aa7a48cc8ab4511a6c81214d"}'></script><!-- End Cloudflare Web Analytics -->
-
-    {% if metadata.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ metadata.google_analytics }}"></script>
-      <script>
-        window['ga-disable-{{ site.google_analytics }}'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '{{ metadata.google_analytics }}');
-
-                document.addEventListener('turbolinks:load', event => {
-                          if (typeof gtag === 'function') {
-                                    gtag('config', '{{ metadata.google_analytics }}', {
-                                              'page_location': event.data.url
-                                            });
-                                  }
-                        });
-      </script>
-    {% endif %}
   {% endif %}
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
