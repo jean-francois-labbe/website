@@ -6,6 +6,8 @@
   <meta name="description" content="{{ metadata.description }}" />
 
   {% if environment == "production" %}
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0859ae00aa7a48cc8ab4511a6c81214d"}'></script><!-- End Cloudflare Web Analytics -->
+
     {% if metadata.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ metadata.google_analytics }}"></script>
       <script>
