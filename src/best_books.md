@@ -15,6 +15,11 @@ layout: prose
 * [Eloquent Ruby](http://eloquentruby.com/)
 * [Practical object-oriented design in ruby](https://www.poodr.com/)
 * [Domain driven design](https://www.goodreads.com/book/show/179133.Domain_Driven_Design)
+* [Test-Driven Development: By Example](https://www.goodreads.com/book/show/387190.Test_Driven_Development)
+* [Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com/)
+* [Domain-Driven Design: Tackling Complexity in the Heart of
+    Software](https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/)
+
 
 ## Development process
 
