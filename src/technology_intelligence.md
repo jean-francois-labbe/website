@@ -60,7 +60,6 @@ Here is the list of technical blog I follow using [Feedly](https://feedly.com){:
 <div class="compact-list" markdown="1">
 
 #### Web dev (mostly rails)
-*  [Riding Rails](https://weblog.rubyonrails.org/){:target="_blank"}
 *  [Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles){:target='_blank'}
 *  [Planet Argon Blog](http://blog.planetargon.com/feed.rss){:target="_blank"}
 *  [Hongli Lai](https://www.joyfulbikeshedding.com/blog){:target="_blank"}
@@ -88,6 +87,7 @@ Here is the list of technical blog I follow using [Feedly](https://feedly.com){:
 *  [Haki Benita](https://hakibenita.com/){:target="_blank"}
 *  [The Pug Automatic](https://thepugautomatic.com/){:target="_blank"}
 *  [giant robots smashing into other giant robots](https://thoughtbot.com/blog){:target="_blank"}
+*  [Riding Rails](https://weblog.rubyonrails.org/){:target="_blank"}
 *  [The Art of PostgreSQL](https://tapoueh.org/){:target="_blank"}
 *  [Timescale Blog](https://blog.timescale.com/){:target="_blank"}
 *  [Blog - James Mead](https://jamesmead.org/){:target="_blank"}
