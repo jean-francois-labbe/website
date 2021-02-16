@@ -4,10 +4,8 @@ published: true
 title:  "How to describe a response containing an array with Rswag"
 date: 2020-12-24
 summary: Learn how to describe a response containing an array using Rswag with RubyOnRails
-last_modified_at: 2020-12-24
 image: 
 main_image_description: 
-keywords: RubyOnRails, development, associations, swagger, rswag
 ---
 
 On a project I work on we use swagger to document api using the [rswag gem](https://github.com/rswag/rswag).

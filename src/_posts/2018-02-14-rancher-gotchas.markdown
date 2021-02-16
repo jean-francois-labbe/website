@@ -2,13 +2,10 @@
 layout: post
 published: true
 title:  "Rancher gotchas"
-head_title: Rancher gotchas [Experience]
 date: 2018-02-14T20:00:00+01:00
 summary: I've been using Rancher for one year now with Cattle orchestrator. From ci to review env to production, I run everything with Rancher. It provides great value and is stable. Though we experienced some issues that I'd like to share here.
-last_modified_at: 2019-08-21T20:00:00+01:00
 image: /images/rancher.jpg
 main_image_description: Traps
-keywords: Devops, rancher, containers, production, best practicies, docker, save money, startup
 ---
 
 I've been using [Rancher](https://rancher.com) for one year now with Cattle orchestrator.
