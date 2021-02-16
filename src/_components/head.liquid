@@ -25,6 +25,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-Q3qGP1uJL/B0sEmu57PKXjCirgPKMbg73OLRbTJ6lfHCVU5zkHqmcTI5EV2fSoPV1MHdKsCBE7m/aS6q0pPjRQ==" crossorigin="anonymous"></script>
   <!-- <script src="{% webpack_path js %}" defer></script> -->
 
+
+{% if metadata.enable_hotwire == true %}
   <script type="module">
     import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
   </script>
@@ -34,3 +36,8 @@
           Prism.highlightAll();
         })
   </script>
+{% else %}
+  <script>
+    Prism.highlightAll();
+  </script>
+{% endif %}

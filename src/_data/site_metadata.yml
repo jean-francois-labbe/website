@@ -9,3 +9,6 @@ tagline: Efficient software developer
 email: jean-francois@hey.com
 
 description: Jean-François Labbé - Full Stack web development, consultant, specializing in Ruby on Rails and JavaScript. Experienced in building scalable and performant APIs for startups and refactoring legacy codebases. Blogging about web developer stuff.
+
+# Disable as it breaks cloudflare analytics
+enable_hotwire: false
