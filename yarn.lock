@@ -849,11 +849,6 @@
     postcss "7.0.32"
     purgecss "^3.0.0"
 
-"@hotwired/turbo@^7.0.0-beta.3":
-  version "7.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-7.0.0-beta.3.tgz#c3b5dea05fb246aa2bcf53b073675e97ddbc76d8"
-  integrity sha512-lOyxOaZJBLxD8sGowjghkmCxuN4FcqYDciRI88DuzyXok35vK6nYewGSfZ4SOpb7McOJ5qVChEsUaBfmY+N8NA==
-
 "@tailwindcss/typography@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.3.1.tgz#253ce580c8e06b6163d9a288edd24f25e1d0dfee"
