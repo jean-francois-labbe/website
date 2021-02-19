@@ -6,7 +6,7 @@ layout: prose
 
 ## Rails
 
-**Scoping or requests**
+**Scoping of requests**
 
 Instead of this
 
