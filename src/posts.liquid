@@ -11,10 +11,10 @@ description: Welcome to my blog
   </a>
 </div>
 
-{% for post in site.posts %}
+{% for post in collections.posts.resources %}
   <div class="mb-8">
-    <a href="{{ post.url }}" class="text-lg hover:text-red-500">{{ post.title }}</a>
-    <div>{{ post.summary }}</div>
+    <a href="{{ post.relative_url }}" class="text-lg hover:text-red-500">{{ post.data.title }}</a>
+    <div>{{ post.data.summary }}</div>
     <div class="text-gray-500">{{ post.date | date_to_long_string }}</div>
   </div>
 {% endfor %}

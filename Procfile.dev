@@ -1,2 +1,0 @@
-bridgetown: bundle exec bridgetown serve --watch
-webpack: yarn run webpack-dev

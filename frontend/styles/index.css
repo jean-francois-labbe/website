@@ -1,6 +1,15 @@
+/* If you need to add @import statements, do so up here */
+
+@import "jit-refresh.css"; /* triggers frontend rebuilds */
+
+/* Set up Tailwind imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @media print {
   .cv {
-    h1 { @apply text-xl font-semibold }
+    h1 { @apply text-2xl font-semibold }
     h2 { @apply text-xl mt-1 }
     h3 { @apply text-base mt-1 mb-0;
       span { @apply text-sm }

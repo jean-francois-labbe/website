@@ -1,10 +1,10 @@
-﻿---
+---
 layout: post
 published: false
 title:  "Polymorphic associations in views"
 date: 2018-03-20T20:00:00+01:00
 summary: How to use polymorphic in your views
-image: 
+image:
 main_image_description: Polymorphic assocations in views
 ---
 

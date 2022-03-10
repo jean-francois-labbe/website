@@ -8,6 +8,7 @@ module.exports = {
       "./output/**/*.html",
       "src/**/*.html",
       "src/**/*.liquid",
+      "src/**/*.md",
     ],
   },
   darkMode: false,
