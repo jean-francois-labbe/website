@@ -43,11 +43,11 @@ stub_request(:get, "http://localhost:3001/api/v1/articles").
 ## What is going on here?
 
 There is a race condition between the System under test (the application) and the test bed (Capybara).
-After the page.accept_confirm block has been executed there is nothing more to do in the test.
+After the `page.accept_confirm` block has been executed there is nothing more to do in the test.
 
 The next step for the test suite is to execute the teadown. Webmock by default is part of the teardown and it removes all the stubbed requests.
 Don't forget that the system under test is running in parallel of Capybara.
-When the application is finally executing the action related to the `clik_on "Delete article"` action the stubbed request has already been
+When the application is finally executing the action related to the `click_on "Delete article"` action the stubbed request has already been
 removed by the teardown.
 
 Webmock then raises an error.
