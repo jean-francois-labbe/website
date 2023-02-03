@@ -32,7 +32,7 @@ Though it doesn't allow zooming by default.
 
 To enable zooming add the following settings.
 
-```kt
+```kotlin
 webView.settings.builtInZoomControls = true
 webView.settings.displayZoomControls = false
 ```

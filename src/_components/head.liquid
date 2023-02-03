@@ -1,10 +1,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-{% capture page_title %}{{ title | strip_html | strip_newlines }}{% endcapture %}
-<title>{% if page_title != "" %}{{ page_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}</title>
-  {% feed_meta %}
+{% capture resource_title %}{{ title | strip_html | strip_newlines }}{% endcapture %}
+<title>{% if resource_title != "Index" %}{{ resource_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}</title>
 
-  <meta name="description" content="{{ metadata.description }}" />
+{% feed_meta %}
+
+<meta name="description" content="{{ metadata.description }}" />
 
   {% if environment == "production" %}
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0859ae00aa7a48cc8ab4511a6c81214d"}'></script><!-- End Cloudflare Web Analytics -->
@@ -16,14 +17,10 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="{% webpack_path css %}" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{% asset_path css %}" />
 
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
 
-  <script data-manual src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-core.min.js" integrity="sha512-hqRrGU7ys5tkcqxx5FIZTBb7PkO2o3mU6U5+qB9b55kgMlBUT4J2wPwQfMCxeJW1fC8pBxuatxoH//z0FInhrA==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-Q3qGP1uJL/B0sEmu57PKXjCirgPKMbg73OLRbTJ6lfHCVU5zkHqmcTI5EV2fSoPV1MHdKsCBE7m/aS6q0pPjRQ==" crossorigin="anonymous"></script>
   <!-- <script src="{% webpack_path js %}" defer></script> -->
 
 
@@ -32,15 +29,15 @@
       import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
     </script>
 
-    <script>
-      document.addEventListener("turbo:load", function() {
-              Prism.highlightAll();
-            })
-    </script>
+    {% comment %} <script> {% endcomment %}
+    {% comment %}   document.addEventListener("turbo:load", function() { {% endcomment %}
+    {% comment %}           Prism.highlightAll(); {% endcomment %}
+    {% comment %}         }) {% endcomment %}
+    {% comment %} </script> {% endcomment %}
   {% else %}
-    <script>
-      window.addEventListener("load", function() {
-              Prism.highlightAll();
-            })
-    </script>
+   {% comment %} <script> {% endcomment %}
+    {% comment %}   window.addEventListener("load", function() { {% endcomment %}
+    {% comment %}           Prism.highlightAll(); {% endcomment %}
+    {% comment %}         }) {% endcomment %}
+    {% comment %} </script> {% endcomment %}
   {% endif %}
