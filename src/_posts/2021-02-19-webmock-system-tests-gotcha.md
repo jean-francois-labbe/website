@@ -68,7 +68,7 @@ test "Can delete an article" do
 end
 ```
 
-I noticed that using and headless browser fixed this issue, I don't know how safe it is, has the race condition is theoretically present.
+I noticed that using and headless browser fixed this issue, I don't know how safe it is, as the race condition is theoretically present.
 
 
 ## Conclusion
